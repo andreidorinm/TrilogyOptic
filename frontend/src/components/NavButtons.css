@@ -1,0 +1,50 @@
+/* :root {
+    --primary: #000000;
+  } */
+/*   
+  .btnNav {
+    padding: 4px 4px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: var(--primary);
+  }
+  
+  .btnNav:hover {
+    padding: 4px 4px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 1px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease-out;
+  } */
+  
+  /* .btn {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: var(--primary);
+  }
+  
+  .btn:hover {
+    padding: 6px 18px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease-out;
+  } */
+  
+  /* .btn-success:hover {
+    background-color: #04AA6D;
+    color: white;
+  /* } */
