@@ -1,4 +1,4 @@
-# ProShop eCommerce Platform
+# Trilogy Optic MERN Application
 
 > eCommerce platform built with the MERN stack & Redux.
 

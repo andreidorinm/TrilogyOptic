@@ -29,6 +29,8 @@
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 20px;
+    text-align: center;
+
   }
   h4 {
     /* margin-left: 20px; */
@@ -51,7 +53,7 @@
   .cards {
     display: center;
     height: 220px;
-    width: 165px;
+    width: 175px;
     background-color: #ffffff;
     margin-left: -50px;
     transition: 0.4s ease-out;

@@ -3,6 +3,12 @@
 }
 
 .btn {
+  /*make the button animate in a gradient color with teal */
+
+  animation: blinker 1s linear infinite;
+  /*make the button round */
+  border-radius: 50%;
+  /*make the button bigger */
   padding: 10px 22px;
   border-radius: 2px;
   outline: none;

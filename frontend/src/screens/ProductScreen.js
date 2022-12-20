@@ -12,13 +12,13 @@ import {
 } from '../actions/productActions'
 import { PRODUCT_CREATE_REVIEW_RESET } from '../constants/productConstants'
 
-const ProductScreen = ({ history, match }) => {
+const ProductScreen = ({ history, match, location }) => {
   const [qty, setQty] = useState(1)
   const [rating, setRating] = useState(0)
   const [comment, setComment] = useState('')
-  const historyback = useHistory();
+  const historyback = useHistory()
 
-
+  const redirect = location.search ? location.search.split('=')[1] : '/'
 
   const dispatch = useDispatch()
 
@@ -62,8 +62,7 @@ const ProductScreen = ({ history, match }) => {
 
   return (
     <>
-
-      <Link className='btn btn-light my-3' onClick={() => historyback.goBack()}> 
+      <Link className='btn btn-light my-3' onClick={() => historyback.goBack()}>
         Întoarce-te
       </Link>
       {loading ? (
@@ -118,7 +117,7 @@ const ProductScreen = ({ history, match }) => {
                   {product.countInStock > 0 && (
                     <ListGroup.Item>
                       <Row>
-                        <Col>Qty</Col>
+                        <Col>Cantitate</Col>
                         <Col>
                           <Form.Control
                             as='select'
@@ -145,7 +144,7 @@ const ProductScreen = ({ history, match }) => {
                       type='button'
                       disabled={product.countInStock === 0}
                     >
-                      Add To Cart
+                      Adaugă în coș
                     </Button>
                   </ListGroup.Item>
                 </ListGroup>
@@ -174,7 +173,7 @@ const ProductScreen = ({ history, match }) => {
                   )}
                   {loadingProductReview && <Loader />}
                   {errorProductReview && (
-                    <Message variant='danger'>{errorProductReview}</Message>
+                    <Message variant='danger'>Completeaza rezenzia</Message>
                   )}
                   {userInfo ? (
                     <Form onSubmit={submitHandler}>
@@ -207,12 +206,13 @@ const ProductScreen = ({ history, match }) => {
                         type='submit'
                         variant='primary'
                       >
-                        Submit
+                        Trimite
                       </Button>
                     </Form>
                   ) : (
                     <Message>
-                      Te rugăm <Link to='/login'>să te înregistreazi</Link> pentru a evalua produsul{' '}
+                      Te rugăm <Link to='/login'>să te înregistreazi</Link>{' '}
+                      pentru a evalua produsul{' '}
                     </Message>
                   )}
                 </ListGroup.Item>

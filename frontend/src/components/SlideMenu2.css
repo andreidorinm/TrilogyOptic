@@ -30,6 +30,7 @@
 
 .text{
   text-align: center;
+  
 }
 
 .slidemenu label:hover {
@@ -47,6 +48,7 @@
   text-align: center;
   text-justify: inter-word;
   text-transform:uppercase;
+  
 }
 
 .photo {
@@ -57,6 +59,7 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+
 }
 
 .slidemenu label .icon {
@@ -69,6 +72,7 @@
   margin: 0 auto;
   line-height: 50px;
   border-radius: 50%;
+
 }
 
 /*Bar Style*/

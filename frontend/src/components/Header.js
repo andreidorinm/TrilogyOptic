@@ -13,7 +13,7 @@ import './Dropdown.css'
 import './Button.css'
 import './Menu.css'
 // import './NavButtons.css'
-import logo from './Logo/logotrilogy.jpg'
+import logo from './Logo/logotrilogy.png'
 
 const Header = () => {
   const dispatch = useDispatch()
@@ -37,7 +37,7 @@ const Header = () => {
         <Container>
           <LinkContainer to='/' className='navbar-logo'>
             <Navbar.Brand>
-              Trilogy Optic{' '}
+              {' '}
               <i>
                 <Image src={logo} />
               </i>

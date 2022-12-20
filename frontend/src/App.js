@@ -76,6 +76,7 @@ const App = () => {
           <Route path='/admin/userlist' component={UserListScreen} />
           <Route path='/contact' component={ContactScreen} />
           <Route path='/services' component={ServicesScreen} />
+         
           <Route path='/admin/user/:id/edit' component={UserEditScreen} />
           <Route
             path='/admin/productlist'
