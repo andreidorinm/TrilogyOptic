@@ -7,13 +7,11 @@
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
-    "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "yarn start --prefix frontend",
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
-    "install-frontend": "cd frontend && npm install",
-    "build-frontend": "cd frontend && npm run build",
-    "render-postbuild": "npm run install-frontend && npm run build-frontend"
+    "heroku-postbuild": "yarn_CONFIG_PRODUCTION=false yarn install --prefix frontend && yarn build --prefix frontend"
   },
   "author": "Andrei Mihaila",
   "license": "MIT",
