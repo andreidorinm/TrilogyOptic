@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
-    "frontend": "npm start --prefix frontend",
+    "frontend": "cd frontend && npm start",
     "build-frontend": "cd frontend && npm run build",
     "install-frontend": "cd frontend && npm install",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
