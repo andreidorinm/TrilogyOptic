@@ -1,3 +1,0 @@
-Sitemap: https://trilogyoptic.art/sitemap.xml
-User-agent: *
-Disallow:
